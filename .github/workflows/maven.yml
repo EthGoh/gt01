@@ -26,10 +26,12 @@ jobs:
       with:
         java-version: '22'
         distribution: 'temurin'
-        cache: maven
-
+        cache: maven  
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+      
     - name: 'Setup Chrome and chromedriver'
-    - run: |
+      run: |
            wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
            echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
            sudo apt-get update -qqy
@@ -46,9 +48,6 @@ jobs:
            unzip chromedriver_linux64.zip && chmod +x chromedriver && sudo mv chromedriver /usr/local/bin
            chromedriver -version
       shell: bash
-    
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
 
     # Build and test the project
     - name: Build and Test
