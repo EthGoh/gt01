@@ -1,10 +1,12 @@
 package test.java;
 
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -24,9 +26,10 @@ public class TechnicalTestFormTest {
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--headless");
-		
+
 		// Initialize WebDriver
 		driver = new ChromeDriver(options);
+		new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Initialize Page Objects
 		testPage = new TechnicalTestForm(driver);
