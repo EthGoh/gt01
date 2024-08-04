@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-04T12:19:46 SGT" name="Default suite" finished-at="2024-08-04T12:19:49 SGT" duration-ms="2966">
+  <suite started-at="2024-08-04T14:02:51 SGT" name="Default suite" finished-at="2024-08-04T14:02:57 SGT" duration-ms="5566">
     <groups>
     </groups>
-    <test started-at="2024-08-04T12:19:46 SGT" name="Default test" finished-at="2024-08-04T12:19:49 SGT" duration-ms="2966">
-      <class name="govtech01.TechnicalTestFormTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:govtech01.TechnicalTestFormTest@7586beff]" started-at="2024-08-04T12:19:46 SGT" name="setUp" finished-at="2024-08-04T12:19:48 SGT" duration-ms="2058" status="PASS">
+    <test started-at="2024-08-04T14:02:51 SGT" name="Default test" finished-at="2024-08-04T14:02:57 SGT" duration-ms="5566">
+      <class name="test.java.TechnicalTestFormTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.TechnicalTestFormTest@f5958c9]" started-at="2024-08-04T14:02:51 SGT" name="setUp" finished-at="2024-08-04T14:02:56 SGT" duration-ms="4793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEmptyForm()[pri:0, instance:govtech01.TechnicalTestFormTest@7586beff]" started-at="2024-08-04T12:19:48 SGT" name="testEmptyForm" finished-at="2024-08-04T12:19:48 SGT" duration-ms="131" status="PASS">
+        <test-method signature="testEmptyForm()[pri:0, instance:test.java.TechnicalTestFormTest@f5958c9]" started-at="2024-08-04T14:02:56 SGT" name="testEmptyForm" finished-at="2024-08-04T14:02:56 SGT" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyForm -->
-        <test-method signature="testForm()[pri:0, instance:govtech01.TechnicalTestFormTest@7586beff]" started-at="2024-08-04T12:19:48 SGT" name="testForm" finished-at="2024-08-04T12:19:49 SGT" duration-ms="759" status="PASS">
+        <test-method signature="testForm()[pri:0, instance:test.java.TechnicalTestFormTest@f5958c9]" started-at="2024-08-04T14:02:56 SGT" name="testForm" finished-at="2024-08-04T14:02:57 SGT" duration-ms="603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:govtech01.TechnicalTestFormTest@7586beff]" started-at="2024-08-04T12:19:49 SGT" name="tearDown" finished-at="2024-08-04T12:19:49 SGT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.java.TechnicalTestFormTest@f5958c9]" started-at="2024-08-04T14:02:57 SGT" name="tearDown" finished-at="2024-08-04T14:02:57 SGT" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- govtech01.TechnicalTestFormTest -->
+      </class> <!-- test.java.TechnicalTestFormTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
