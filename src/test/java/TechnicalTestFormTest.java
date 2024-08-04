@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -29,13 +30,14 @@ public class TechnicalTestFormTest {
 
 		// Initialize WebDriver
 		driver = new ChromeDriver(options);
-		new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Initialize Page Objects
 		testPage = new TechnicalTestForm(driver);
 
 		// Open the test form
 		driver.get("https://form.gov.sg/64532b2493ceeb0012c6354f");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/div[2]/div[4]/div[1]/div[1]/form/div[2]/button")));
 
 		System.out.println("Test Setup");
 	}
